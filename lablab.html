@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request for Proposal</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form name="form">
+        <fieldset name="fieldset">
+            <legend>Request for Proposal</legend>
+            <label>Your Name:</label>
+            <input type="text" name="YourName">
+            <label>Email:</label>
+            <input type="text" name="Email">
+            <label>UserName:</label>
+            <input type="text" name="UserName">
+            <label>Password:</label>
+            <input type="password" name="Password">
+            <label>Your Business:</label>
+            <textarea id="Business" name="Business" rows="5" cols="50">Briefly describe your business in this space</textarea>
+            <label>Company Size:</label>
+            <input type="radio" name="Size" value="Less than 10">Less than 10
+            <input type="radio" name="Size" value="11 to 50">11 to 50
+            <input type="radio" name="Size" value="51 to 200">51 to 200
+            <input type="radio" name="Size" value="over 200">Over 200
+            <br>
+            <label>Service:</label>
+            <input type="checkbox" name="BrandIdentity">Brand Identity
+            <input type="checkbox" name="NewWebsite">New Website
+            <input type="checkbox" name="WebRedesigner">Web Redesigner
+            <br>
+            <label>Timeline:</label>
+            <select name="Timeline">
+                <option selected="selected" value="Immediately">Immediately</option>
+                <option value="1-2 weeks">1-2 weeks</option>
+                <option value="3-6 weeks">3-6 weeks</option>
+                <option value="7-2 months">7-2 months</option>
+            </select>
+            <br>
+            <input type="button" name="SendToDevDesign" value="Send to dev/design"> 
+        </fieldset>
+    </form>
+</body>
+</html>
